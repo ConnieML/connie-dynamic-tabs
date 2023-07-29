@@ -1,4 +1,4 @@
-import * as FlexPlugin from 'flex-plugin';
-import EmergencyContactCenterPlugin from './EmergencyContactCenterPlugin';
+import * as FlexPlugin from '@twilio/flex-plugin';
+import tabs_RTCplugin from './tabs_RTCplugin';
 
-FlexPlugin.loadPlugin(EmergencyContactCenterPlugin);
+FlexPlugin.loadPlugin(tabs_RTCplugin);

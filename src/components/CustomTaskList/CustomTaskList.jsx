@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { CustomTaskListComponentStyles } from './CustomTaskList.Styles';
+import { Alert } from '@twilio-paste/core/alert';
+import { Theme } from '@twilio-paste/core/theme';
+import { Text } from '@twilio-paste/core/text';
 
-// It is recommended to keep components stateless and use redux for managing states
-const CustomTaskList = (props) => {
-  if (!props.isOpen) {
+const CustomTaskList = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  if (!isOpen) {
     return null;
   }
 
+  const dismiss = () => setIsOpen(false);
+
   return (
-    <CustomTaskListComponentStyles>
-      This is a dismissible demo component
-      <i className="accented" onClick={props.dismissBar}>
-        close
-      </i>
-    </CustomTaskListComponentStyles>
+    <Theme.Provider theme="default">
+      <Alert onDismiss={dismiss} variant="neutral">
+        <Text>
+          This is a dismissible demo component.
+        </Text>
+      </Alert>
+    </Theme.Provider>
   );
 };
 

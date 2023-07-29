@@ -1,6 +1,6 @@
 import React from 'react';
 import { VERSION } from '@twilio/flex-ui';
-import { FlexPlugin } from 'flex-plugin';
+import { FlexPlugin } from '@twilio/flex-plugin';
 
 import CustomInterface from './components/CustomInterface/CustomInterface';
 import CustomTaskListContainer from './components/CustomTaskList/CustomTaskList.Container';
@@ -35,7 +35,7 @@ export default class EmergencyContactCenterPlugin extends FlexPlugin {
 
 
     flex.AgentDesktopView.defaultProps.splitterOptions = {
-      minimumSecondPanelSize: "70%"
+      minimumSecondPanelSize: "55%"
     }
   }
 

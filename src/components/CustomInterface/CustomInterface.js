@@ -13,15 +13,19 @@ class CustomInterface extends Component {
     }
 
     dispatchIframe() {
-        return { __html: `<iframe class="airtable-embed" src="https://beacon.trekmedics.org/dashboard" width="100%" height="${window.innerHeight}"><iframe>` }
+        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
     }
     
     intakeIframe () {
-        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrww4Ej1FLEwhW6c?backgroundColor=red&prefill_Phone=${this.state.prefillPhone}" width="100%" height="${window.innerHeight}"><iframe>` }
+        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" width="100%" height="${window.innerHeight}"><iframe>` }
     }
 
     donationDistribution () {
-        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrfhjKnaBinh7ONa?backgroundColor=red&viewControls=on" width="100%" height="${window.innerHeight}"><iframe>` }
+        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/appXyXOHlD7rqJJLr/shrgV3sX54wr5dktD?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+    }
+
+    formsIframe () {
+        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrww4Ej1FLEwhW6c?backgroundColor=red&prefill_Phone=${this.state.prefillPhone}" frameborder="0" onmousewheel="" width="100%" height=${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
     }
 
     componentWillReceiveProps (props) {
@@ -47,9 +51,10 @@ class CustomInterface extends Component {
         return(
             <Tabs selectedIndex={this.state.currentTab} onSelect={(tabIndex) => this.changeTab(tabIndex)} >
                 <TabList>
-                    <Tab>Dispatch</Tab>
-                    <Tab>Donation Intake</Tab>
-                    <Tab>Donation Distribution</Tab>
+                    <Tab>Clients</Tab>
+                    <Tab>Caregivers</Tab>
+                    <Tab>Partners</Tab>
+                    <Tab>Forms</Tab>
                 </TabList>
                 <TabPanel>
                     <div dangerouslySetInnerHTML={this.dispatchIframe()} />
@@ -60,6 +65,10 @@ class CustomInterface extends Component {
                 <TabPanel>
                     <div dangerouslySetInnerHTML={this.donationDistribution()} />
                 </TabPanel>
+                <TabPanel>
+                    <div dangerouslySetInnerHTML={this.formsIframe()} />
+                </TabPanel>
+
             </Tabs>
         );
     }
