@@ -1,3 +1,7 @@
+# Current Status
+
+This repository has been archived due to no longer having relevant use in the current state of Connie.
+
 # Twilio Flex Emergency Contact Center
 This repository is the source code for the Emergency Contact Center tutorial on the Twilio Blog.
 
