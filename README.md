@@ -1,9 +1,9 @@
-# Current Status
+<a  href="https://www.connieconnect.com">
+<img  src="https://i.postimg.cc/MGd7M6Cp/connie-logo-white-thin-deja-Vu-Sans.png"  alt="Connie SaaS For Nonprofits"  width="250"  />
+</a>
 
-This repository has been archived due to no longer having relevant use in the current state of Connie.
-
-# Twilio Flex Emergency Contact Center
-This repository is the source code for the Emergency Contact Center tutorial on the Twilio Blog.
+# Agent Desktop Portal Tabs Plugin
+This repository is the plugin source code that powers the Agent Desktop Portal Tabs. The portal tabs make the data portal section of the agent's desktop exponentially more useful by allowing agents to have one-click access to the tools they need to answer questions and deliver CBO services. Additionally, the tabs are responsive based on the task attribues and variable that get passed when the agent accepts a new task. 
 
 Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
