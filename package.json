@@ -1,5 +1,5 @@
 {
-  "name": "plugin-dynamic-rtc-tabs",
+  "name": "connie-dynamic-tabs-airtable",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
   "dependencies": {
     "@twilio-paste/core": "^10.20.0",
     "@twilio-paste/icons": "^5.7.0",
-    "@twilio/flex-plugin-scripts": "6.1.2",
     "core-js": "^2.6.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-tabs": "^3.0.0"
+    "react-tabs": "^3.0.0",
+    "@twilio/flex-plugin-scripts": "7.0.0"
   },
   "devDependencies": {
-    "@twilio/flex-ui": "2.3.3",
+    "@twilio/flex-ui": "2.8.1",
     "react-test-renderer": "17.0.2"
   }
 }
