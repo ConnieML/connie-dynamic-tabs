@@ -13,15 +13,22 @@ class CustomInterface extends Component {
     }
 
     dispatchIframe() {
-        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+        // return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+        return { __html: `<iframe class="airtable-embed" src="https://v1.connie.plus" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
     }
     
     intakeIframe () {
+        // return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" width="100%" height="${window.innerHeight}"><iframe>` }
         return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/shrVTU8uyYD6nXuuq?backgroundColor=blue&layout=card&viewControls=on" width="100%" height="${window.innerHeight}"><iframe>` }
     }
 
     donationDistribution () {
-        return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/appXyXOHlD7rqJJLr/shrgV3sX54wr5dktD?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+        // return { __html: `<iframe class="airtable-embed" src="https://airtable.com/embed/appXyXOHlD7rqJJLr/shrgV3sX54wr5dktD?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+        return { __html: `<iframe class="airtable-embed" src="https://cbocrm.org/admin" frameborder="0" onmousewheel="" width="100%" height="${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
+    }
+
+    hubspotIframe () {
+        return { __html: `<iframe class="airtable-embed" src="https://app.hubspot.com/contacts/46308290/contacts/list/view/all/" frameborder="0" onmousewheel="" width="100%" height=${window.innerHeight}" style="background: transparent; border: 1px solid #ccc;"><iframe>` }
     }
 
     formsIframe () {
@@ -51,9 +58,10 @@ class CustomInterface extends Component {
         return(
             <Tabs selectedIndex={this.state.currentTab} onSelect={(tabIndex) => this.changeTab(tabIndex)} >
                 <TabList>
-                    <Tab>Clients</Tab>
-                    <Tab>Caregivers</Tab>
-                    <Tab>Partners</Tab>
+                    <Tab>Web</Tab>
+                    <Tab>Airtable</Tab>
+                    <Tab>CBOCRM</Tab>
+                    <Tab>Hubspot</Tab>
                     <Tab>Forms</Tab>
                 </TabList>
                 <TabPanel>
@@ -64,6 +72,9 @@ class CustomInterface extends Component {
                 </TabPanel>
                 <TabPanel>
                     <div dangerouslySetInnerHTML={this.donationDistribution()} />
+                </TabPanel>
+                <TabPanel>
+                    <div dangerouslySetInnerHTML={this.hubspotIframe()} />
                 </TabPanel>
                 <TabPanel>
                     <div dangerouslySetInnerHTML={this.formsIframe()} />

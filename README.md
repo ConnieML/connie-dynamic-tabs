@@ -7,23 +7,33 @@ This repository is the plugin source code that powers the Agent Desktop Portal T
 
 Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
-## Setup
+## Requirements & Setup
 
-Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com) installed.
+[Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com)
+[FLex Plugins CLI](https://www.twilio.com/docs/flex/developer/plugins/cli/install)
 
-Afterwards, install the dependencies by running `npm install`:
 
-```bash
-git clone git@github.com:cweems/plugin-emergency-contact-center.git
-cd plugin-emergency-contact-center
+1. Download the repo and install the dependencies by running `npm install`:
+
+``` SSH
+git clone git@github.com:ConnieML/portal-tabs-plugin.git
+cd portal-tabs-plugin
 
 # If you use npm
 npm install
 ```
+2.  Upgrade default plugin dependencies to be compatible with Flex UI 2.0 
+    twilio flex:plugins:upgrade-plugin --install --flex-ui-2.0
+
+3. Check and Upgrade additional dependencies with [NPM Check Updates](https://www.npmjs.com/package/npm-check-updates)
+    ncu
+
+4. In ./public copy app.config.example => app.config
 
 ## Development
 
-In order to develop locally, you can use the Webpack Dev Server by running:
+You can deploy a local copy with the CLI by running: twilio flex:plugins:start
+or ... you can use the Webpack Dev Server by running:
 
 ```bash
 npm start
@@ -37,11 +47,16 @@ PORT=3000 npm start
 
 When you make changes to your code, the browser window will be automatically refreshed.
 
-## Deploy
+## Deploy & Release
 
-Once you are happy with your plugin, you have to bundle it in order to deploy it to Twilio Flex.
+Once you are happy with your plugin, you have to bundle it in order to deploy it to Connie
 
 Run the following command to start the bundling:
+twilio flex:plugins:deploy --major --changelog "Adding Bing as search engine" --description "First Plugin on Flex"
+
+Run the following command to Release:
+twilio flex:plugins:release --name "First Plugin Release" --description "Enabling Plugin Sample" --plugin plugin-sample@1.0.0
+
 
 ```bash
 npm run build
