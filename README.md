@@ -2,10 +2,10 @@
 <img  src="https://i.postimg.cc/MGd7M6Cp/connie-logo-white-thin-deja-Vu-Sans.png"  alt="Connie SaaS For Nonprofits"  width="250"  />
 </a>
 
-# Agent Desktop Portal Tabs Plugin
-This repository is the plugin source code that powers the Agent Desktop Portal Tabs. The portal tabs make the data portal section of the agent's desktop exponentially more useful by allowing agents to have one-click access to the tools they need to answer questions and deliver CBO services. Additionally, the tabs are responsive based on the task attribues and variable that get passed when the agent accepts a new task. 
+# 🗂️ Connie Dynamic Tabs Plugin
+This repository is the plugin source code that enables dynamic tabs in the Connie info panel. Connie Tabs make the data information panel section of the agent's desktop exponentially more useful by allowing agents to have one-click access to the tools and data they need to answer questions and deliver CBO services. Additionally, the tabs are responsive based on the task attribues and variable that get passed when the agent accepts a new task. 
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
+To learn more about Connie Dynamic Tabs, check out the product [feature page](https://connieconnect.com) or the [admin docs](https://docs.google.com/presentation/d/10FvsaIWYulWj72B2wUdXjw0mvJ-bB8uc/edit?usp=sharing&ouid=100905596054709529716&rtpof=true&sd=true).
 
 ## Requirements & Setup
 

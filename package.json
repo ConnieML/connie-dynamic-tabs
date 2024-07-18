@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "connie-dynamic-tabs",
   "version": "1.0.0",
+=======
+  "name": "connie-dynamic-tabs-airtable",
+  "version": "1.0.1",
+>>>>>>> 1d1e64e998df20cb15159f51352414094e6bc1c7
   "private": true,
   "scripts": {
     "bootstrap": "flex-check-start",
