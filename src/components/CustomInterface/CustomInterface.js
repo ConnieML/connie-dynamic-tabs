@@ -58,11 +58,11 @@ class CustomInterface extends Component {
         return(
             <Tabs selectedIndex={this.state.currentTab} onSelect={(tabIndex) => this.changeTab(tabIndex)} >
                 <TabList>
-                    <Tab>Web</Tab>
-                    <Tab>Airtable</Tab>
-                    <Tab>CBOCRM</Tab>
-                    <Tab>Hubspot</Tab>
-                    <Tab>Forms</Tab>
+                    <Tab>Connie +</Tab>
+                    <Tab>H2H Website</Tab>
+                    <Tab>Clients</Tab>
+                    <Tab>Partners</Tab>
+                    <Tab>Tools</Tab>
                 </TabList>
                 <TabPanel>
                     <div dangerouslySetInnerHTML={this.dispatchIframe()} />
