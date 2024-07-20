@@ -10,13 +10,13 @@
     "@twilio-paste/core": "^20.14.0",
     "@twilio-paste/icons": "^12.6.0",
     "core-js": "^3.37.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-tabs": "^6.0.2",
     "@twilio/flex-plugin-scripts": "7.0.0"
   },
   "devDependencies": {
     "@twilio/flex-ui": "2.8.1",
-    "react-test-renderer": "18.3.1"
+    "react-test-renderer": "17.0.2"
   }
 }
