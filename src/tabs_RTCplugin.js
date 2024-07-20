@@ -6,9 +6,9 @@ import CustomInterface from './components/CustomInterface/CustomInterface';
 import CustomTaskListContainer from './components/CustomTaskList/CustomTaskList.Container';
 import reducers, { namespace } from './states';
 
-const PLUGIN_NAME = 'EmergencyContactCenterPlugin';
+const PLUGIN_NAME = 'tabs_RTCplugin';
 
-export default class EmergencyContactCenterPlugin extends FlexPlugin {
+export default class tabs_RTCplugin extends FlexPlugin {
   constructor() {
     super(PLUGIN_NAME);
   }
